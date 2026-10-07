@@ -483,9 +483,9 @@ function viewStats() {
 
 function nightsTable(nights) {
   if (!nights.length) return '';
-  return `<div class="table-wrap"><table><thead><tr><th>Gece</th><th>Uyuma</th><th>Uyanma</th><th>Süre</th><th>Kalite</th><th>Skor</th></tr></thead><tbody>${[...nights]
+  return `<div class="table-wrap"><table><thead><tr><th>Gece</th><th>Uyuma</th><th>Uyanma</th><th>Süre</th><th class="col-q">Kalite</th><th>Skor</th></tr></thead><tbody>${[...nights]
     .reverse()
-    .map((n) => `<tr><td>${A.fmtNight(n.date)}</td><td>${A.fmtOff(n.bedOff)}</td><td>${A.fmtOff(n.wakeOff)}</td><td>${A.fmtDur(n.dur)}</td><td>${n.quality ? n.quality.toFixed(0) + '/5' : '–'}</td><td>${n.score.total}</td></tr>`)
+    .map((n) => `<tr><td>${A.fmtNight(n.date)}</td><td>${A.fmtOff(n.bedOff)}</td><td>${A.fmtOff(n.wakeOff)}</td><td>${A.fmtDur(n.dur, { short: true })}</td><td class="col-q">${n.quality ? n.quality.toFixed(0) + '/5' : '–'}</td><td>${n.score.total}</td></tr>`)
     .join('')}</tbody></table></div>`;
 }
 

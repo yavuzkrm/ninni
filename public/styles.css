@@ -1366,7 +1366,8 @@ rect.hit.hovered {
 }
 .table-wrap {
   max-height: 320px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   margin-top: 8px;
 }
 table {
@@ -2009,6 +2010,16 @@ th {
 @media (max-width: 520px) {
   .hide-xs {
     display: none;
+  }
+  /* The nights table fits a phone without a sideways scrollbar: tighter cells, no quality column. */
+  .col-q {
+    display: none;
+  }
+  th, td {
+    padding: 7px 5px;
+  }
+  table {
+    font-size: 12.5px;
   }
   .ln-body {
     flex-direction: column;
