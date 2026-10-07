@@ -1,0 +1,13 @@
+{
+  "name": "Ninni — uyku takibi",
+  "short_name": "Ninni",
+  "description": "Gecelerini kaydet, uykunu anla.",
+  "lang": "tr",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0E1020",
+  "theme_color": "#0E1020",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

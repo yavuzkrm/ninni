@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#171a3a"/>
+  <circle cx="47" cy="15" r="1.6" fill="#cfd3ff"/>
+  <circle cx="53" cy="27" r="1.1" fill="#cfd3ff"/>
+  <circle cx="16" cy="13" r="1.1" fill="#cfd3ff"/>
+  <path d="M38 12a20 20 0 1 0 14 34A17 17 0 0 1 38 12z" fill="#f2c66d"/>
+  <text x="43" y="40" font-family="Georgia,serif" font-style="italic" font-size="10" fill="#cfd3ff">z</text>
+  <text x="48" y="33" font-family="Georgia,serif" font-style="italic" font-size="7" fill="#cfd3ff">z</text>
+</svg>
